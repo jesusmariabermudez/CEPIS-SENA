@@ -20,6 +20,13 @@
 </head>
 
 <body>
+
+    <!--Spin mostrara la pagina una vez se cargue todo el contenido-->
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+    </div>
+    <!--End spin-->
+
     <!--navbar con el menu y el logo-->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -36,7 +43,7 @@
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-black">Home</a></li>
+                    <li><a href="/index.html" class="nav-link px-2 text-black">Home Turista</a></li>
                     <li><a href="#" class="nav-link px-2 text-black"></a></li>
                     <li><a href="#" class="nav-link px-2 text-black">¿Porque nosotros?</a></li>
                     <li><a href="#" class="nav-link px-2 text-black" data-bs-toggle="modal"
@@ -71,7 +78,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- ==============The Modal Register==================== -->
     <div class="modal fade" id="myModalemReg">
 
@@ -409,7 +416,7 @@
                 data-bs-target="#myModaltuReg">Descubre Como &raquo;</a>
         </div>
     </main>
-
+    <hr>
 
     <!--==================Footer========================-->
     <footer class="bg-light text-center text-white">
@@ -456,7 +463,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/spin-loader.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
