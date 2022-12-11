@@ -1,5 +1,6 @@
 window.addEventListener('load', ()=>{
-    const contenedor_loader=document.querySelector(".contenedor_loader")
-    contenedor_loader.style.opacity=1
-    contenedor_loader.style.visibility='hidden'
+    const Loader=document.querySelector(".Loader")
+    Loader.style.opacity=1
+    Loader.style.visibility='hidden'
+    Loader.style.display=''
 })
