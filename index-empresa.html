@@ -9,14 +9,16 @@
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="css/login-empresa.css" rel="stylesheet">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 
+    <!--Css Perzonalizado-->
+    <link href="css/login-empresa.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <title>Eco Cepis Empresa</title>
+    <title>Ecoturismo y áreas protegidas || Empresa</title>
 </head>
 
 <body>
@@ -42,46 +44,96 @@
                 <a class="navbar-brand text-white" href="#">
                     <img class="cepis" src="images/cepis.png" width="70" height="70" class="d-inline-block align-top"
                         alt="">
-                    CEPIS
+
                 </a>
 
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/index.html" class="nav-link px-2 text-black">Home Turista</a></li>
-                    <li><a href="#" class="nav-link px-2 text-black"></a></li>
-                    <li><a href="#" class="nav-link px-2 text-black">¿Porque nosotros?</a></li>
-                    <li><a href="#" class="nav-link px-2 text-black" data-bs-toggle="modal"
-                            data-bs-target="#myModalr">Acerda de</a></li>
-                    <li><a href="#" class="nav-link px-2 text-black"></a></li>
+                    <li><a href="./index.html" class="nav-link px-2 text-white">Home Turista</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white"></a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#acercade"
+                            class="nav-link px-2 text-white">¿Porque nosotros?</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white" data-bs-toggle="modal"
+                            data-bs-target="#acercade">Acerda de</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white"></a></li>
                 </ul>
                 <!-- button's for login-register with dropdown-->
-                <div class="dropdown login-1">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Entrar
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="login-empresa.html" data-bs-toggle="modal"
-                                data-bs-target="#myModalem">Empresa</a></li>
-                        <li><a class="dropdown-item" href="login-turista.html" data-bs-toggle="modal"
-                                data-bs-target="#myModaltu">Turista</a></li>
-                    </ul>
-                </div>
-                <div class="dropdown registro-1 ">
-                    <button class="btn btn-secondary dropdown-toggle btn-warning" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Registro
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="registro-empresa.html" data-bs-toggle="modal"
-                                data-bs-target="#myModalemReg">Empresa</a></li>
-                        <li><a class="dropdown-item" href="registro-turismo.html" data-bs-toggle="modal"
-                                data-bs-target="#myModaltuReg">Turista</a></li>
-                    </ul>
-                </div>
+                <div class=" dropdown login-1">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Entrar
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login-empresa.html" data-bs-toggle="modal"
+                                        data-bs-target="#myModalem">Empresa</a></li>
+                                <li><a class="dropdown-item" href="login-turista.html" data-bs-toggle="modal"
+                                        data-bs-target="#myModaltu">Turista</a></li>
+                            </ul>
+            </div>
+            <div class="dropdown registro-1 ">
+                <button class="btn btn-secondary dropdown-toggle btn-warning" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Registro
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="registro-empresa.html" data-bs-toggle="modal"
+                            data-bs-target="#myModalemReg">Empresa</a></li>
+                    <li><a class="dropdown-item" href="registro-turismo.html" data-bs-toggle="modal"
+                            data-bs-target="#myModaltuReg">Turista</a></li>
+                </ul>
             </div>
         </div>
+        </div>
     </nav>
-    
+
+    <!--Modal acerca de-->
+    <div class="modal fade" id="acercade">
+
+        <div class="modal-header">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+
+        <div class="modal modal-signin position-static d-block bg-white py-5 modal-content" tabindex="-1" role="dialog"
+            id="modalSignin">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quisquam eius perspiciatis
+                    cupiditate totam nemo doloribus fuga voluptas nesciunt libero in sit dignissimos distinctio
+                    accusamus, ipsa hic! Suscipit, dolor rerum!
+                    Ab iure sapiente cum, architecto praesentium vel quod earum obcaecati amet veniam laborum qui vero
+                    incidunt ad. In velit cum, amet quasi, aliquid exercitationem nemo itaque temporibus numquam ut
+                    esse!
+                    Odio vel beatae nesciunt, impedit distinctio id dolore, quas obcaecati eveniet eius nobis optio
+                    assumenda expedita maiores blanditiis esse. Blanditiis, ratione sapiente? Cumque corporis quidem,
+                    veritatis sunt pariatur ducimus consequuntur.
+                    Aperiam amet minima atque ipsa fugit. Ipsam iste dolores delectus corporis, autem quas sequi
+                    adipisci architecto voluptates? Quaerat iure laboriosam architecto, quam exercitationem praesentium
+                    quae minima dolorem cum fugiat id.
+                    Accusantium similique fuga natus pariatur facere, eius dicta repellendus quidem magnam architecto
+                    reiciendis cum sit? Voluptatibus laboriosam necessitatibus iusto inventore, quos temporibus dolorem
+                    impedit excepturi vero! Voluptatibus natus ab officia.
+                    Voluptatibus animi quos temporibus nobis similique aperiam corporis earum tenetur assumenda quo
+                    rerum quas totam repudiandae veniam eius eum, praesentium, placeat nisi molestias illo distinctio
+                    laborum excepturi! Eaque, provident rerum!
+                    Eum a hic voluptate distinctio. Debitis, beatae perspiciatis. Temporibus praesentium pariatur labore
+                    error, commodi ea velit ipsum, perspiciatis, vel repellendus dicta modi hic quia quisquam quam
+                    deleniti suscipit sapiente adipisci.
+                    Nesciunt, asperiores. Rem eius libero corporis ut in cupiditate iste voluptates dolorem distinctio,
+                    porro ducimus autem magnam commodi, perspiciatis sequi. Eius eum nemo laudantium hic, autem natus ut
+                    itaque perspiciatis.
+                    Sed facilis amet quibusdam voluptates sit explicabo maxime voluptate adipisci, cum ratione aperiam
+                    incidunt ab accusantium tenetur! Quaerat, accusamus qui earum, repellendus, magni assumenda dolor
+                    suscipit saepe provident nulla tempora.
+                    Sint alias dolore doloremque illo consectetur, fugit optio, ad reiciendis aperiam et ab architecto
+                    maiores voluptatum. Autem quibusdam dolor quasi repudiandae aperiam. Rerum voluptatum, maxime
+                    recusandae vel aspernatur mollitia quaerat.</p>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
     <!-- ==============The Modal Register==================== -->
     <div class="modal fade" id="myModalemReg">
 
@@ -96,20 +148,20 @@
 
 
                     <div class="modal-body p-5 pt-0">
-                        <form class="form-signin">
+                        <form class="form-signin" action="./index-empresa.html">
                             <div class="text-center cepislogo mb-3">
                                 <img class="mb-3" src="images/cepis.png" alt="" width="90" height="90"
                                     style="border-radius: 50%;">
-                                <h1 class="h3 mb-3 font-weight-normal ">registro de Empresa</h1>
+                                <h1 class="h3 mb-3 font-weight-normal ">Registro de Empresa</h1>
 
                             </div>
 
                             <div class="form-group">
-                                <input type="text" id="inputFName" class="form-control" placeholder="Fisrt name"
-                                    required autofocus>
+                                <input type="text" id="inputFName" class="form-control" placeholder="Nombres" required
+                                    autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="inputLName" class="form-control" placeholder="Last name"
+                                <input type="text" id="inputLName" class="form-control" placeholder="Apellidos"
                                     required>
                             </div>
                             <div class="form-group">
@@ -117,41 +169,40 @@
                                     required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                    required>
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Correo electronico" required>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Confirmar Correo electronico" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña"
                                     required>
                             </div>
                             <div class="form-group">
                                 <input type="password" id="inputCPassword" class="form-control"
-                                    placeholder="Confirm Password" required>
+                                    placeholder="Confirmar Contraseña" required>
                             </div>
 
                             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
-                                type="submit">Registrase</button>
-                            <small class="text-muted">Por hacer click en Registrar, Tu aceptas los terminnos de
+                                type="submit">Registrarse</button>
+                            <small class="text-muted">Una vez hecho click en Registrar, estas aceptando los terminnos de
                                 uso.</small>
                             <hr class="my-4">
                             <h2 class="fs-5 fw-bold mb-3">O puedes ingresar utilizando</h2>
                             <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#twitter" />
-                                </svg>
+
                                 Registrate con Twitter
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#facebook" />
-                                </svg>
+
                                 Registrate con Facebook
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#github" />
-                                </svg>
+
                                 Registrate con GitHub
                             </button>
                         </form>
@@ -176,7 +227,7 @@
 
 
                     <div class="modal-body p-5 pt-0">
-                        <form class="form-signin">
+                        <form class="form-signin" action="./index.html">
                             <div class="text-center cepislogo mb-3">
                                 <img class="mb-3" src="images/cepis.png" alt="" width="90" height="90"
                                     style="border-radius: 50%;">
@@ -185,11 +236,11 @@
                             </div>
 
                             <div class="form-group">
-                                <input type="text" id="inputFName" class="form-control" placeholder="Fisrt name"
-                                    required autofocus>
+                                <input type="text" id="inputFName" class="form-control" placeholder="Nombres" required
+                                    autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="inputLName" class="form-control" placeholder="Last name"
+                                <input type="text" id="inputLName" class="form-control" placeholder="Apellidos"
                                     required>
                             </div>
                             <div class="form-group">
@@ -197,41 +248,40 @@
                                     required>
                             </div>
                             <div class="form-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                    required>
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Correo electronico" required>
                             </div>
 
                             <div class="form-group">
-                                <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Confirmar Correo electronico" required>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña"
                                     required>
                             </div>
                             <div class="form-group">
                                 <input type="password" id="inputCPassword" class="form-control"
-                                    placeholder="Confirm Password" required>
+                                    placeholder="Confirmar Contraseña" required>
                             </div>
 
                             <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
                                 type="submit">Registrase</button>
-                            <small class="text-muted">Por hacer click en Registrar, Tu aceptas los terminnos de
+                            <small class="text-muted">Una vez hecho click en Registrar, estas aceptando los terminnos de
                                 uso.</small>
                             <hr class="my-4">
                             <h2 class="fs-5 fw-bold mb-3">O puedes ingresar utilizando</h2>
                             <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#twitter" />
-                                </svg>
+
                                 Registrate con Twitter
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#facebook" />
-                                </svg>
+
                                 Registrate con Facebook
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#github" />
-                                </svg>
+
                                 Registrate con GitHub
                             </button>
                         </form>
@@ -243,7 +293,7 @@
     </div>
     </div>
 
-    <!--==================end Modal Register=================-->
+    <!--==================================end Modal Register===============================-->
 
     <!-- ==============The Modal Login==================== -->
     <div class="modal fade" id="myModalem">
@@ -259,63 +309,42 @@
 
 
                     <div class="modal-body p-5 pt-0">
-                        <form class="form-signin">
+                        <form class="form-signin" action="./index-empresa.html">
                             <div class="text-center cepislogo mb-3">
                                 <img class="mb-3" src="images/cepis.png" alt="" width="90" height="90"
                                     style="border-radius: 50%;">
-                                <h1 class="h3 mb-3 font-weight-normal ">Ingresar como Empresa</h1>
+                                <h1 class="h3 mb-3 font-weight-normal ">Entrar como Empresa</h1>
 
                             </div>
 
+
                             <div class="form-group">
-                                <input type="text" id="inputFName" class="form-control" placeholder="Fisrt name"
-                                    required autofocus>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="inputLName" class="form-control" placeholder="Last name"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="inputUsername" class="form-control" placeholder="Username"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                    required>
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Empresa@example.com.co" required autofocus>
                             </div>
 
                             <div class="form-group">
                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                                     required>
                             </div>
-                            <div class="form-group">
-                                <input type="password" id="inputCPassword" class="form-control"
-                                    placeholder="Confirm Password" required>
-                            </div>
 
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
-                                type="submit">Registrase</button>
+
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
                             <small class="text-muted">Por hacer click en Registrar, Tu aceptas los terminnos de
                                 uso.</small>
                             <hr class="my-4">
                             <h2 class="fs-5 fw-bold mb-3">O puedes ingresar utilizando</h2>
                             <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#twitter" />
-                                </svg>
-                                Registrate con Twitter
+
+                                Entrar con Twitter
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#facebook" />
-                                </svg>
-                                Registrate con Facebook
+
+                                Entrar con Facebook
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#github" />
-                                </svg>
-                                Registrate con GitHub
+
+                                Entrar con Google
                             </button>
                         </form>
                     </div>
@@ -339,63 +368,40 @@
 
 
                     <div class="modal-body p-5 pt-0">
-                        <form class="form-signin">
+                        <form class="form-signin" action="./index.html">
                             <div class="text-center cepislogo mb-3">
                                 <img class="mb-3" src="images/cepis.png" alt="" width="90" height="90"
                                     style="border-radius: 50%;">
-                                <h1 class="h3 mb-3 font-weight-normal">Ingresar como turista</h1>
+                                <h1 class="h3 mb-3 font-weight-normal">Entrar como turista</h1>
 
                             </div>
 
                             <div class="form-group">
-                                <input type="text" id="inputFName" class="form-control" placeholder="Fisrt name"
-                                    required autofocus>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="inputLName" class="form-control" placeholder="Last name"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" id="inputUsername" class="form-control" placeholder="Username"
-                                    required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address"
-                                    required>
+                                <input type="email" id="inputEmail" class="form-control"
+                                    placeholder="Username o Correo electronico" required autofocus>
                             </div>
 
                             <div class="form-group">
                                 <input type="password" id="inputPassword" class="form-control" placeholder="Password"
                                     required>
                             </div>
-                            <div class="form-group">
-                                <input type="password" id="inputCPassword" class="form-control"
-                                    placeholder="Confirm Password" required>
-                            </div>
 
-                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary"
-                                type="submit">Registrase</button>
-                            <small class="text-muted">Por hacer click en Registrar, Tu aceptas los terminnos de
+                            <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Entrar</button>
+                            <small class="text-muted">Por hacer click en Entrar, Tu aceptas los terminnos de
                                 uso.</small>
                             <hr class="my-4">
                             <h2 class="fs-5 fw-bold mb-3">O puedes ingresar utilizando</h2>
                             <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#twitter" />
-                                </svg>
-                                Registrate con Twitter
+
+                                Entrarcon Twitter
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#facebook" />
-                                </svg>
-                                Registrate con Facebook
+
+                                Entraron Facebook
                             </button>
                             <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                                <svg class="bi me-1" width="16" height="16">
-                                    <use xlink:href="#github" />
-                                </svg>
-                                Registrate con GitHub
+
+                                Entrar con Google
                             </button>
                         </form>
                     </div>
@@ -414,52 +420,177 @@
             <h1>Te ayudaremos a llevar tu negocio a más <p class="itu">Personas en toda Colombia</p>
             </h1>
             <p class="lead">El deseo de que nuestro país sea reconocido mundialmente nos permite trabajar para ti.</p>
-            <p class="lead">En nuestra plataforma podrás mostrar y ofrecer tus servicios, brindar Promociones y mucho más.</p>
+            <p class="lead">En nuestra plataforma podrás mostrar y ofrecer tus servicios, brindar Promociones y mucho
+                más.</p>
             <a class="btn btn-lg btn-primary" href="#" role="button" data-bs-toggle="modal"
                 data-bs-target="#myModaltuReg">Descubre Como &raquo;</a>
         </div>
     </main>
-    <hr>
+    <!--Images gallery, RECORDAR COMPRIMIR LAS IMAGENES DESCARGADAS CON TINYPNG, REDUCIR EL TAMAÑO DE LAS MISMAS -->
+    <!--https://www.youtube.com/watch?v=Vko5cC4SMSc-->
+    <div class="gallery">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" onclick="window.open('https\://google.com', '_blank');"
+                            src="images/17.01.16-Ecoturismo.jpg" width="600" height="300" alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://fuegoverde.com.co/wp-content/uploads/2019/03/Pesca-Embalse-El-Penol-El-Penol-Guatape-Antioquia.jpg?&w=300&h=590"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/13613495/pexels-photo-13613495.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/10817609/pexels-photo-10817609.jpeg?auto=compress&cs=tinysrgb&w=430"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/6162495/pexels-photo-6162495.jpeg?auto=compress&cs=tinysrgb&w=440"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/7613847/pexels-photo-7613847.jpeg?auto=compress&cs=tinysrgb&w=530"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/8274851/pexels-photo-8274851.jpeg?auto=compress&cs=tinysrgb&w=700"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/6381158/pexels-photo-6381158.jpeg?auto=compress&cs=tinysrgb&w=620"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/3574696/pexels-photo-3574696.jpeg?auto=compress&cs=tinysrgb&w=540"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/13360379/pexels-photo-13360379.jpeg?auto=compress&cs=tinysrgb&w=440"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/12470921/pexels-photo-12470921.jpeg?auto=compress&cs=tinysrgb&w=470"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/3658482/pexels-photo-3658482.jpeg?auto=compress&cs=tinysrgb&w=570"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/12985194/pexels-photo-12985194.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/3822113/pexels-photo-3822113.jpeg?auto=compress&cs=tinysrgb&w=430"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/11809721/pexels-photo-11809721.jpeg?auto=compress&cs=tinysrgb&w=620"
+                            alt=""></div>
+                </div>
+                <div class="item" onclick="carga(this)">
+                    <div class="contenedor-foto"><img id="img" loading="lazy"
+                            onclick="window.open('https\://google.com', '_blank');"
+                            src="https://images.pexels.com/photos/8345945/pexels-photo-8345945.jpeg?auto=compress&cs=tinysrgb&w=500"
+                            alt=""></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
 
     <!--==================Footer========================-->
-    <footer class="bg-light text-center text-white">
-        <!-- Grid container -->
-        <div class="container p-4 pb-0">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
-                        class="fab fa-facebook-f"></i></a>
 
-                <!-- Twitter -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
-                        class="fab fa-twitter"></i></a>
+    <div class="footer">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
 
-                <!-- Google -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
-                        class="fab fa-google"></i></a>
-                <!-- Instagram -->
-                <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
-                        class="fab fa-instagram"></i></a>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
 
-                <!-- Linkedin 
-                <a class="btn text-white btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i
-                        class="fab fa-linkedin-in"></i></a>-->
-                <!-- Github 
-                <a class="btn text-white btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i
-                        class="fab fa-github"></i></a>-->
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Grid container -->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
 
-        <!-- Copyright -->
-        <div class="text-center text-black p-3" style="background-color: rgba(250, 249, 249, 0.2);">
-            © 2022 Copyright:
-            <a class="text-black" href="https://EcoCapis.com/">EcoCapis.com</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="subir">
+                <p><a href="#">Subir</a></p>
+            </div>
+
+
+
+
+        </footer>
+    </div>
+
     <!--==================end Footer========================-->
 
 

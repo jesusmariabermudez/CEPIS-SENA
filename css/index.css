@@ -1,55 +1,62 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
-body{
-    background: linear-gradient(45deg, rgb(249, 250, 248), rgb(207, 228, 236),rgb(243, 246, 243),rgb(185, 209, 209));
+body {
+    background: linear-gradient(45deg, rgb(62, 68, 84), rgb(29, 42, 47), rgb(55, 64, 55), rgb(185, 209, 209));
     background-size: 400% 400%;
     animation: gradient 12s ease-in infinite;
-
 }
 
 @keyframes gradient {
-    0%{
+    0% {
         background-position: 0% 50%;
     }
 
-    50%{
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
 
     }
 }
 
-.navbar{
+.navbar {
     padding: 20px;
     position: fixed;
     width: 100%;
+    background: linear-gradient(45deg, rgb(84, 88, 90), rgb(77, 103, 112), rgb(56, 69, 56), rgb(56, 72, 72));
+}
+
+.nav li a {
+    color: aliceblue;
+
 }
 
 .form-group {
     margin: 10px 0;
 }
-.cepislogo{
+
+.cepislogo {
     margin: 5px 0;
 }
 
-.cepislogo h1{
+.cepislogo h1 {
     text-shadow: 1px 2px 2px black;
     color: rgb(17, 181, 80);
     font-size: 1.4vmax;
 }
 
-.main{
+.main {
     display: flex;
     flex-wrap: wrap;
     min-width: 320px;
@@ -59,30 +66,32 @@ body{
     border-radius: 10px;
     margin-top: 8%;
 
-    background: linear-gradient(45deg, rgb(88, 211, 111), rgb(88, 221, 247),rgb(80, 187, 80),rgb(115, 235, 231));
+    background: linear-gradient(45deg, rgb(91, 107, 93), rgb(35, 72, 48), rgb(143, 219, 143), rgb(11, 131, 127));
     background-size: 400% 400%;
-    animation: gradient 12s ease-in infinite;}
-  
+    animation: gradient 12s ease-in infinite;
+}
+
 .jumbotron {
     margin: 20px;
 }
 
-.itu{
+.itu {
     color: rgb(224, 244, 7);
     text-shadow: 1px 2px 2px black;
     font-weight: 600;
 }
- h1{
+
+h1 {
     text-transform: uppercase;
     font-weight: 800;
     font-size: 4.4vmin;
- }
+}
 
- .cepis{
+.cepis {
     border-radius: 50%;
- }
+}
 
- /*configuracion para las imagenes*/
+/*configuracion para las imagenes*/
 
 /*=================Imagenes =================*/
 
@@ -97,14 +106,14 @@ body{
 }
 
 .item img:hover {
-    transform: scale(1.6);
+    transform: scale(1.4);
     text-align: center;
 
 }
 
 .gallery {
     columns: 5 210px;
-    column-gap:  2rem;
+    column-gap: 2rem;
     margin: 5%;
     width: auto;
     transition: .5s ease;
@@ -168,4 +177,33 @@ body{
     to {
         transform: rotate(360deg);
     }
+}
+
+.footer {
+    color: aliceblue;
+    position: relative;
+    margin-top: 0%;
+    background: linear-gradient(45deg, rgb(62, 68, 84), rgb(29, 42, 47), rgb(55, 64, 55), rgb(185, 209, 209));
+    padding: 35px;
+
+}
+
+
+.subir a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.subir {
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    padding: 0.2em 0.5em;
+    text-decoration: none;
+}
+
+.subir a:hover {
+    color: rgb(167, 230, 219);
+    font-weight: 700;
+
 }
